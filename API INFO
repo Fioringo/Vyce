@@ -1,0 +1,8 @@
+//*PUT THIS IN ANDROIDMANIFEST.XML INSIDE APPLICATION TAG*
+ <meta-data
+            android:name="com.google.android.geo.API_KEY"  android:value="AIzaSyDG7mXB-JgXTRrp8FIxg4myC4Kd6BVBORE" />
+            
+            
+            
+            //*PUT THIS IN ANDROIDMANIFEST.XML INSIDE MANIFEST TAG*
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
