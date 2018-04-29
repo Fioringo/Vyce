@@ -19,10 +19,20 @@
     android:layout_height="match_parent"
     android:id="@+id/layout">
 
-    <fragment
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/map"
         class="com.google.android.gms.maps.SupportMapFragment"
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:onClick="changeToCalendar"
+        android:text="To Calendar"
+        android:textAlignment="center"
+        android:visibility="visible" />
 </FrameLayout>

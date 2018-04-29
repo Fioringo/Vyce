@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/viewMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clean_app">
+
+
+    <TextView
+        android:id="@+id/stats"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="144dp"
+        android:text="@string/_230_nsaved"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="60sp"
+        android:typeface="normal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/rightswitch"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/leftswitch"
+        app:layout_constraintTop_toBottomOf="@+id/date" />
+
+    <Button
+        android:id="@+id/btn_calendar_main"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:text="@string/next_appointment"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="switchSettings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+    <Button
+        android:id="@+id/leftswitch"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="16dp"
+        android:layout_height="0dp"
+        android:onClick="switchLeftView"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calendar_main"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rightswitch"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="20dp"
+        android:layout_height="0dp"
+        android:onClick="switchRightView"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calendar_main"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_settings" />
+
+    <Button
+        android:id="@+id/Panic"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Panic Button"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/rightswitch"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/leftswitch"
+        app:layout_constraintTop_toBottomOf="@+id/stats" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="33dp"
+        android:layout_marginStart="84dp"
+        android:inputType="date"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/leftswitch"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DailyCigarettes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toStartOf="@+id/rightswitch"
+        app:layout_constraintStart_toEndOf="@+id/leftswitch"
+        app:layout_constraintTop_toBottomOf="@+id/Panic" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="78dp"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="8dp"
+        android:text="I smoked a cigaret."
+        app:layout_constraintEnd_toStartOf="@+id/rightswitch"
+        app:layout_constraintStart_toEndOf="@+id/leftswitch"
+        app:layout_constraintTop_toBottomOf="@+id/DailyCigarettes"
+        android:onClick="SmokedOne"/>
+
+</android.support.constraint.ConstraintLayout>
