@@ -55,7 +55,7 @@ public class clean_app extends AppCompatActivity implements GestureDetector.OnGe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //moneySaved();
+        
         cigsLeft = dailyCigs;
         int loggedIn = 1;
         int loggeDay = 0;
@@ -87,9 +87,6 @@ public class clean_app extends AppCompatActivity implements GestureDetector.OnGe
         if(counter==1){
             theNumber += "0";
         }
-
-        // Display CigsLeft
-        //DisplayCiggies();
 
         stats = findViewById(R.id.stats);
         String string = "$" + theNumber + " saved!";
@@ -133,6 +130,7 @@ public class clean_app extends AppCompatActivity implements GestureDetector.OnGe
         //DisplayCiggies();
     }
 
+    /* Application page navigation functions */
     public void switchRightView(View view){
         Intent switchRightView = new Intent(this, clean_right.class);
         //switchRightView.putExtra("callingActivity", "MainActivity");
