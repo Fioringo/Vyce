@@ -15,3 +15,5 @@ Vyce is an Android Application that helps smoking addicts to recover.
 3. Run the app on the device/simulator.
 
 Done!
+
+Can't install Vyce? Run [Myce](http://myce.link.s3-website-us-east-1.amazonaws.com)!
